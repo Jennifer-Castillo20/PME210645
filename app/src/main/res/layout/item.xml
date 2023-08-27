@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="411dp"
+    android:layout_height="200dp"
+    android:animateLayoutChanges="true"
+    android:id="@+id/cv"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="190dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="393dp"
+            android:layout_height="206dp"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="86dp"
+                android:layout_height="97dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="14dp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="144dp"
+                android:layout_height="96dp"
+                android:layout_alignTop="@id/img"
+                android:layout_margin="5dp"
+                android:layout_marginStart="-15dp"
+                android:layout_marginLeft="-15dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@id/img"
+                android:layout_toRightOf="@id/img"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtperiodista"
+                    android:layout_width="107dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="Periodista"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtDescripcion"
+                    android:layout_width="115dp"
+                    android:layout_height="28dp"
+                    android:layout_marginBottom="2dp"
+                    android:text="Descripcion"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtFecha"
+                    android:layout_width="108dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="Fecha"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="250dp"
+                android:layout_marginLeft="-105dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/editar"
+                    android:layout_width="105dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="#03A9F4"
+                    android:text="Editar" />
+
+                <Button
+                    android:id="@+id/eliminar"
+                    android:layout_width="105dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#ED0303"
+                    android:text="Eliminar" />
+
+                <Button
+                    android:id="@+id/audi"
+                    android:layout_width="105dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#FFC93C"
+                    android:text="Audio" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

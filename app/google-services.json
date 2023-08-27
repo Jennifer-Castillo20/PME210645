@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "240723278604",
+    "project_id": "entrevista-39354",
+    "storage_bucket": "entrevista-39354.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240723278604:android:84c98ebbd8eb2d1d0ee729",
+        "android_client_info": {
+          "package_name": "com.example.pme210645"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "240723278604-6ip089av3b64gnonh1vi3mcjjmj7cb4c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pme210645",
+            "certificate_hash": "be4f1bdb9c0c35e54fc4c8c45d529aa09c374e03"
+          }
+        },
+        {
+          "client_id": "240723278604-b5vagtuq2k9pmf1v56hjakq7cr94mp6o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-4Hgi1nPxdEdYZkkNf_JROQUx0aSwfpM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "240723278604-b5vagtuq2k9pmf1v56hjakq7cr94mp6o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

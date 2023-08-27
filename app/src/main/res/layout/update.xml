@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="590dp"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="3dp">
+
+    <TextView
+        android:id="@+id/tx"
+        android:layout_width="34dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="27dp"
+        android:text="Url"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtimg"
+        app:layout_constraintEnd_toStartOf="@+id/Url"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/periodista" />
+
+    <EditText
+        android:id="@+id/txtfecha"
+        android:layout_width="240dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="212dp"
+        android:ems="10"
+        android:inputType="date"
+        android:text=""
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/txtimg" />
+
+    <TextView
+        android:id="@+id/txtimg"
+        android:layout_width="55dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="24dp"
+        android:text="Audio"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtfecha"
+        app:layout_constraintEnd_toStartOf="@+id/audio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tx" />
+
+    <TextView
+        android:id="@+id/descripcion"
+        android:layout_width="87dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="33dp"
+        android:text="Descripcion"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/periodista"
+        app:layout_constraintEnd_toStartOf="@+id/txtdescripcion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Actua"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="37dp"
+        android:text="Actualizar"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtdescripcion"
+        app:layout_constraintEnd_toEndOf="@+id/txtdescripcion"
+        app:layout_constraintStart_toEndOf="@+id/periodista"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Url"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="9dp"
+        android:inputType="text"
+        android:text=""
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/audio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tx"
+        app:layout_constraintTop_toBottomOf="@+id/txtperiodista"
+        tools:ignore="DuplicateIds" />
+
+    <EditText
+        android:id="@+id/audio"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="132dp"
+        android:inputType="text"
+        android:text=""
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnActualizar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtimg"
+        app:layout_constraintTop_toBottomOf="@+id/Url"
+        tools:ignore="DuplicateIds" />
+
+    <EditText
+        android:id="@+id/txtdescripcion"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="33dp"
+        android:inputType="text"
+        android:text=""
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtperiodista"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/descripcion"
+        app:layout_constraintTop_toBottomOf="@+id/Actua"
+        tools:ignore="DuplicateIds" />
+
+    <EditText
+        android:id="@+id/txtperiodista"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="9dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/Url"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/periodista"
+        app:layout_constraintTop_toBottomOf="@+id/txtdescripcion" />
+
+    <TextView
+        android:id="@+id/periodista"
+        android:layout_width="71dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="29dp"
+        android:text="Periodista"
+        app:layout_constraintBottom_toTopOf="@+id/tx"
+        app:layout_constraintEnd_toStartOf="@+id/txtperiodista"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descripcion" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="44dp"
+        android:text="Fecha"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtfecha"
+        app:layout_constraintEnd_toStartOf="@+id/txtfecha"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnActualizar"
+        android:layout_width="162dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="85dp"
+        android:backgroundTint="#0074BD"
+        android:text="Actualizar"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txtfecha"
+        app:layout_constraintStart_toEndOf="@+id/periodista"
+        app:layout_constraintTop_toBottomOf="@+id/audio" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
